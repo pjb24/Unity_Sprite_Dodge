@@ -4,6 +4,7 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 /// <summary>
 /// 게임의 전체 상태를 관리하는 매니저 클래스입니다.
@@ -28,25 +29,25 @@ public class GameManager : MonoBehaviour
 
     [Header("UI")]
     [Tooltip("생명 수를 표시하는 Text")]
-    [SerializeField] private Text lifeText;
+    [SerializeField] private TextMeshProUGUI lifeText;
 
     [Tooltip("생존 시간을 표시하는 Text")]
-    [SerializeField] private Text timeText;
+    [SerializeField] private TextMeshProUGUI timeText;
 
     [Tooltip("격려 메시지 컨테이너")]
     [SerializeField] private GameObject messagePanel;
 
     [Tooltip("격려 메시지를 표시할 Text")]
-    [SerializeField] private Text messageText;
+    [SerializeField] private TextMeshProUGUI messageText;
 
     [Tooltip("게임 오버 패널")]
     [SerializeField] private GameObject gameOverPanel;
 
     [Tooltip("게임 오버 시 점수를 표시하는 Text")]
-    [SerializeField] private Text gameOverScoreText;
+    [SerializeField] private TextMeshProUGUI gameOverScoreText;
 
     [Tooltip("랭킹을 표시하는 Text")]
-    [SerializeField] private Text rankingText;
+    [SerializeField] private TextMeshProUGUI rankingText;
 
     [Header("격려 메시지 설정")]
     [Tooltip("10초마다 순환될 격려 메시지 목록")]
